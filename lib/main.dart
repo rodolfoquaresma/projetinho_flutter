@@ -21,6 +21,20 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Teemozada"),
+      ),
+      body: MyBodyPage(),
+    );
+  }
+}
+
+class MyBodyPage extends StatelessWidget {
+  const MyBodyPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
