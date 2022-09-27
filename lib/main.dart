@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projetinho_flutter/mybodypage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       home: MyHomePage(),
     );
   }
@@ -23,18 +27,9 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("SeilA sEILA"),
+        title: Text("Todo List"),
       ),
       body: MyBodyPage(),
     );
-  }
-}
-
-class MyBodyPage extends StatelessWidget {
-  const MyBodyPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
